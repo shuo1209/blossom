@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+	.wrap{
+		display: flex;
+		justify-content:center;
+		width: 100vw;
+		height: 100vh;
+		margin-top: 100px;
+	}
+	.wrap div{
+		position: absolute;
+		width: 40px;
+		height: 160px;
+		background: linear-gradient(0deg, #CD919E,#CD6090, #CD0000);
+		border-radius: 50%;
+		box-shadow: 3px 3px 3px #CD2626,4px 4px 4px #CD6839,-3px -3px 3px #CD2626,-4px -4px 4px #CD6839;
+		transform-origin:100% 100%;
+	}
+	.wrap div:nth-child(2){
+		transform:rotate(15deg) translateX(15px) translateY(5px);	
+	}
+	.wrap div:nth-child(3){
+		transform:rotate(-15deg);	
+	}
+	.wrap div:nth-child(4){
+		transform:rotate(30deg) translateX(15px) translateY(5px);	
+	}
+	.wrap div:nth-child(5){
+		transform:rotate(-30deg);
+	}
+	.wrap div:nth-child(6){
+		transform:rotate(45deg) translateX(15px) translateY(5px);
+	}
+	.wrap div:nth-child(7){
+		transform:rotate(-45deg);
+	}
+	.wrap div:nth-child(8){
+		margin-top: 38px;
+		height: 140px;
+	}
+	.wrap div:nth-child(9){
+		margin-top: 38px;
+		height: 140px;
+		transform:rotate(10deg) translateX(15px) translateY(5px);	
+	}
+	.wrap div:nth-child(10){
+		margin-top: 38px;
+		height: 140px;
+		transform:rotate(-10deg);	
+	}
+	.wrap .leaf{
+		width: 100px;
+		height: 300px;
+		background: transparent;
+		box-shadow:none;
+		border-radius: 0 0 0 100px / 0 0 0 150px;
+		border:10px solid #006400;
+		top: 269px;
+        left: 52%;
+		border-top-color: transparent;
+		border-right-color: transparent;
+
+	}
+	.wrap .l{
+		width: 20px;
+		height: 50px;
+		background: #006400;
+		box-shadow:none;
+		border-radius: 20px 20px 20px 20px / 50px 50px 50px 50px;
+		top: 260px;
+        left: 52%;
+	}
+	.l1{
+		 transform: rotate(45deg);
+	}
+	.l2{
+		top: 270px;
+		transform: rotate(-45deg);
+	}
+	.l3{
+		 transform: rotate(15deg);
+	}
+	.l4{
+		 transform: rotate(-15deg);
+	}
+	.text{
+		position: absolute;
+	}
+</style>
+<body>
+
+	<div class="wrap">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		
+		<div></div>
+		<div></div>
+		<div></div>
+		<div class="leaf"></div>
+		<div class="l l1"></div>
+		<div class="l l2"></div>
+		<div class="l l3"></div>
+		<div class="l l4"></div>
+	</div>
+</body>
+</html>
